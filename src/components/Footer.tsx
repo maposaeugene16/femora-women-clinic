@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site } from "@/config/site";
 import { categories } from "@/data/products";
 
@@ -7,6 +8,14 @@ export default function Footer() {
     <footer className="mt-24 bg-deep text-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-3">
         <div>
+          <div className="relative mb-4 h-12 w-44 rounded-lg bg-white/95 p-1 shadow-sm">
+            <Image
+              src="/images/logo.png"
+              alt={site.practiceName}
+              fill
+              className="object-contain p-1"
+            />
+          </div>
           <p className="font-serif text-2xl text-white">{site.practiceName}</p>
           <p className="mt-3 text-sm text-white/70">{site.tagline}</p>
           <p className="mt-4 inline-block rounded-md bg-white/10 px-3 py-1.5 text-xs text-gold">
