@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" fill="none">
+  <defs>
+    <linearGradient id="femora-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b83a66" />
+      <stop offset="100%" stop-color="#48162b" />
+    </linearGradient>
+    <linearGradient id="femora-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8bf8c" />
+      <stop offset="100%" stop-color="#cca15a" />
+    </linearGradient>
+  </defs>
+
+  <!-- Flower / Bloom / Health Icon -->
+  <g transform="translate(6, 8)">
+    <!-- Petals / Nurturing Silhouette -->
+    <path d="M24 4 C16 14 12 24 24 44 C36 24 32 14 24 4 Z" fill="url(#femora-rose)" />
+    <path d="M24 20 C10 18 2 28 14 38 C22 36 24 28 24 20 Z" fill="url(#femora-gold)" opacity="0.9" />
+    <path d="M24 20 C38 18 46 28 34 38 C26 36 24 28 24 20 Z" fill="url(#femora-rose)" opacity="0.8" />
+    <!-- Center delicate bud -->
+    <circle cx="24" cy="24" r="3.5" fill="#ffffff" />
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="64" y="34" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" letter-spacing="1.5" fill="#48162b">
+    FEMORA
+  </text>
+  <text x="65" y="49" font-family="'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" letter-spacing="2.8" fill="#b83a66">
+    WOMEN’S CLINIC
+  </text>
+</svg>

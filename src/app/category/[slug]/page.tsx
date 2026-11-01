@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { categories, getCategory, getProductsByCategory } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { site } from "@/config/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -42,7 +43,7 @@ export default async function CategoryPage({ params }: Props) {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-line/60 pb-8">
         <div>
           <span className="text-xs uppercase tracking-wider font-semibold text-brand">
-            Aura Men &amp; Women’s Clinic · Bulawayo
+            {site.practiceName} · Bulawayo
           </span>
           <h1 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl text-ink">{category.name}</h1>
           <p className="mt-3 max-w-2xl text-base text-muted leading-relaxed">{category.blurb}</p>

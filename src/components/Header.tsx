@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { site } from "@/config/site";
+import BrandLogo from "./BrandLogo";
 import WhatsAppButton from "./WhatsAppButton";
 
 const links = [
@@ -14,17 +14,9 @@ const links = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-paper/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2.5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-11 w-36 sm:w-44">
-            <Image
-              src="/images/logo.png"
-              alt={site.practiceName}
-              fill
-              priority
-              className="object-contain object-left"
-            />
-          </div>
+          <BrandLogo variant="light" />
         </Link>
         <nav aria-label="Main" className="hidden items-center gap-7 text-sm font-medium md:flex">
           {links.map((l) => (

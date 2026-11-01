@@ -1,7 +1,7 @@
 /**
- * Treatment and Service Catalog for Aura Men & Women’s Clinic (Bulawayo, Zimbabwe).
- * All images are stored locally in /public/images/ with zero online dependencies.
- * Descriptions accurately reflect the clinical content depicted on each respective image.
+ * Treatment and Service Catalog for Femora Women’s Clinic (Bulawayo, Zimbabwe).
+ * Tailored exclusively for women's healthcare, fertility, maternal wellness, and confidential consultations.
+ * All images stored locally in /public/images/ with zero external dependencies.
  */
 export type Category = {
   slug: string;
@@ -23,134 +23,118 @@ export type Product = {
 export const categories: Category[] = [
   {
     slug: "womens-health",
-    name: "Women's Health & Wellness",
+    name: "Gynaecology & Well-Woman Care",
     blurb:
-      "Confidential care for reproductive health, ultrasound scans, family planning, body shaping, and post-pregnancy recovery in Bulawayo.",
+      "Confidential well-woman clinical examinations, pelvic ultrasound scans, cervical screenings, and personalized preventive care in Bulawayo.",
   },
   {
-    slug: "mens-health",
-    name: "Men's Health & Vitality",
+    slug: "fertility-maternal",
+    name: "Fertility & Maternal Health",
     blurb:
-      "Discreet solutions for male performance, boost pills, organ enhancement therapy, stamina, and doctor consultations.",
+      "Compassionate fertility evaluations, ovulation tracking, prenatal monitoring, and gentle postnatal recovery support.",
+  },
+  {
+    slug: "menstrual-hormone",
+    name: "Menstrual Wellness & Menopause Care",
+    blurb:
+      "Doctor-guided diagnosis and therapeutic relief for irregular periods, PCOS, fibroids, hormone balancing, and graceful menopause transition.",
   },
   {
     slug: "confidential-care",
-    name: "Confidential Testing & Delivery",
+    name: "Discreet Medication & Bulawayo Delivery",
     blurb:
-      "Private WhatsApp consultations, comprehensive STI/STD panels, and unmarked same-day courier delivery to all Bulawayo suburbs.",
+      "Private WhatsApp consultations, MCAZ-regulated female medications, contraceptives, and unmarked same-day courier delivery to all Bulawayo suburbs.",
   },
 ];
 
 export const products: Product[] = [
   {
-    slug: "womens-fertility-reproductive-consultation",
-    name: "Women's Reproductive Health & Ultrasound Scan",
+    slug: "womens-health-consultation",
+    name: "Femora Well-Woman Comprehensive Consultation",
     categorySlug: "womens-health",
     summary:
-      "Digital ultrasound examination, reproductive anatomy evaluation, menstrual cycle regularity, and fertility consultation.",
+      "Comprehensive doctor-led well-woman clinical examinations, cervical screening, pelvic ultrasound, and private health assessments.",
     details:
-      "One-on-one clinical consultation with our registered female medical doctor. Includes digital ultrasound imaging to examine uterine and pelvic anatomy, diagnose irregular or painful menses, balance reproductive hormones, and guide pregnancy planning in complete privacy.",
-    image: "/images/01_womens_reproductive_health.jpg",
+      "One-on-one confidential consultation with our registered female healthcare practitioners. Includes pelvic ultrasound imaging to examine uterine and ovarian anatomy, cervical screening (Pap smear / HPV guidance), breast health assessments, and tailored preventive wellness plans designed for every stage of a woman's life.",
+    image: "/images/femora-womens-health-consultation.png",
     featured: true,
   },
   {
-    slug: "family-planning-contraceptive-guidance",
-    name: "Family Planning & Contraceptive Guidance",
-    categorySlug: "womens-health",
+    slug: "fertility-ovulation-support",
+    name: "Femora Fertility Support & Ovulation Consultation",
+    categorySlug: "fertility-maternal",
     summary:
-      "Safe, confidential guidance on oral contraceptive pills, injectables, implants, IUDs, and condoms tailored to your choices.",
+      "Compassionate fertility evaluations, ovulation tracking, reproductive hormone profiling, and personalized conception support.",
     details:
-      "Consult privately with our clinical team on modern family planning options. We provide doctor-supervised advice on oral contraceptive pills, long-acting hormonal injectables, subdermal implants, intrauterine devices (IUDs), and barrier methods according to Zimbabwean healthcare standards.",
-    image: "/images/family_planning_contraceptive_guidance.jpg",
+      "Confidential fertility guidance for women and couples preparing for pregnancy. We perform detailed pelvic ultrasound follicular tracking, ovarian reserve checks, hormonal balance analysis (FSH, LH, Progesterone), and compassionate counseling in a supportive, judgment-free clinical setting.",
+    image: "/images/femora-fertility-consultation.png",
     featured: true,
   },
   {
-    slug: "post-pregnancy-womb-wellness",
-    name: "Post-Miscarriage & Uterine Wellness Care",
-    categorySlug: "womens-health",
+    slug: "maternal-prenatal-postnatal-care",
+    name: "Femora Maternal Care & Postnatal Healing",
+    categorySlug: "fertility-maternal",
     summary:
-      "Compassionate medical recovery, empathetic counseling, uterine health checks, and emotional healing support.",
+      "Dedicated prenatal health checkups, trimester ultrasound scans, safe motherhood guidance, and postnatal recovery care.",
     details:
-      "Support, healing, and hope. Dedicated medical care for women experiencing miscarriage, pregnancy loss, or uterine discomfort. Our clinical staff provides gentle uterine examinations, infection prevention, emotional support, and future fertility planning in a warm, non-judgmental environment.",
-    image: "/images/post_miscarriage_uterine_wellness_care.jpg",
+      "Complete maternal wellness for expectant and new mothers in Bulawayo. From early pregnancy ultrasound scans and nutritional counseling to postpartum recovery, uterine healing, breastfeeding guidance, and emotional health support.",
+    image: "/images/femora-maternal-care-banner.png",
     featured: true,
   },
   {
-    slug: "womens-boost-pills-vitality",
-    name: "Aura Women's Boost Pills (Health & Vitality)",
-    categorySlug: "womens-health",
+    slug: "menstrual-wellness-pcos-care",
+    name: "Femora Menstrual Wellness & Cycle Health",
+    categorySlug: "menstrual-hormone",
     summary:
-      "Natural support for female vitality, hormonal balance, refreshed energy, healthy skin, hair, and weight management.",
+      "Doctor-guided diagnosis and relief for painful periods, irregular cycles, heavy bleeding, PCOS, and uterine fibroids.",
     details:
-      "Aura Women's Boost Pills are formulated with natural ingredients to support healthy hormone balance, boost daily vitality, support metabolism, and enhance overall feminine wellbeing. Packaged in sealed 60-capsule bottles with doctor-guided dosage instructions.",
-    image: "/images/file_000000009fa88211b8c65e411d17610f.png",
+      "Break free from debilitating menstrual pain and unpredictable cycles. Our female healthcare practitioners specialize in identifying root causes, managing Polycystic Ovary Syndrome (PCOS), endometriosis, uterine fibroids, and balancing female hormones with clinical treatments.",
+    image: "/images/femora-menstrual-wellness-consultation.png",
     featured: true,
   },
   {
-    slug: "womens-weight-management-flat-tummy",
-    name: "Women's Weight Management & Flat Tummy Support",
+    slug: "menopause-healthy-aging",
+    name: "Femora Menopause Care & Healthy Aging",
+    categorySlug: "menstrual-hormone",
+    summary:
+      "Individualized clinical support for perimenopause and menopause: hot flashes, hormone balancing, bone health, and renewed vitality.",
+    details:
+      "Navigate the menopause journey with grace, dignity, and clinical excellence. We provide personalized symptom relief, doctor-supervised hormone health advice, cardiovascular and bone density wellness, sleep improvement, and revitalizing lifestyle therapies.",
+    image: "/images/femora-menopause-care-and-healthy-aging.png",
+    featured: true,
+  },
+  {
+    slug: "discreet-medication-arrangement",
+    name: "Discreet Women's Medication & Bulawayo Delivery",
+    categorySlug: "confidential-care",
+    summary:
+      "Doctor-arranged prescriptions, MCAZ-regulated female medications, contraceptives, and unmarked same-day doorstep delivery.",
+    details:
+      "Private and secure access to genuine medications approved by the Medicines Control Authority of Zimbabwe (MCAZ). Contraceptives, prenatal vitamins, hormone therapies, and intimate wellness treatments dispatched in plain, tamper-evident packages directly to your door anywhere in Bulawayo.",
+    image: "/images/femora-medication-arrangement.png",
+    featured: true,
+  },
+  {
+    slug: "preventive-wellness-screenings",
+    name: "Femora Preventive Health & Screening Campaign",
     categorySlug: "womens-health",
     summary:
-      "Doctor-guided body shaping support, flat tummy pills, metabolism boosters, and appetite control for your body goals.",
+      "Routine well-woman wellness panels, confidential STI/STD screening, anaemia checks, and preventative reproductive care.",
     details:
-      "Achieve your body goals with healthy, structured clinical guidance. Our doctor evaluates your metabolic health and recommends safe flat tummy support, digestive bloat reduction, appetite control, and body shaping programs designed for lasting confidence.",
-    image: "/images/file_00000000911882118f70b9289737f012.png",
+      "Proactive healthcare saves lives. Access confidential screenings for cervical health, confidential STI/STD panels, blood pressure, glucose, thyroid, and iron levels in a safe, judgment-free clinical environment.",
+    image: "/images/femora-wellness-campaign.png",
     featured: false,
   },
   {
-    slug: "mens-vitality-performance-therapy",
-    name: "Men's Vitality & Performance Therapy",
-    categorySlug: "mens-health",
+    slug: "holistic-womens-vitality-consultation",
+    name: "Femora Holistic Women's Wellness & Lifestyle",
+    categorySlug: "womens-health",
     summary:
-      "Doctor-guided clinical therapy for male hormonal balance, erectile stamina, performance anxiety, and sexual wellness.",
+      "Doctor-supervised holistic wellness, female vitality, metabolic health, digestive comfort, and confidential counseling.",
     details:
-      "Private, stigma-free consultation with our experienced male health doctor. We diagnose and treat erectile dysfunction, premature climax, low testosterone levels, and physical fatigue using proven clinical therapies tailored to your lifestyle.",
-    image: "/images/mens_vitality_performance_therapy.jpg",
-    featured: true,
-  },
-  {
-    slug: "mens-boost-performance-pills",
-    name: "Aura Men's Boost Performance Pills",
-    categorySlug: "mens-health",
-    summary:
-      "More power, more stamina, and better endurance. Natural male performance pills for enhanced confidence and vitality.",
-    details:
-      "Aura Men's Boost Performance Pills provide targeted nutritional support to increase physical stamina, boost endurance, improve performance, and enhance male drive. Available in 30-capsule sealed bottles compliant with Zimbabwean safety standards.",
-    image: "/images/file_0000000036088211bde156a4bd1fe16e.png",
-    featured: true,
-  },
-  {
-    slug: "mens-organ-enlargement-vitality",
-    name: "Men's Enhancement & Confidence Therapy",
-    categorySlug: "mens-health",
-    summary:
-      "Safe and effective medical options for male organ enhancement, improved stamina, and restored confidence.",
-    details:
-      "Professional and confidential care by registered doctors. Our service includes safe and effective treatment options, improved performance and stamina, enhanced confidence, and comprehensive male vitality therapy in our private Bulawayo practice.",
-    image: "/images/file_000000002478821185cf415b4a7cdc36.png",
+      "Reclaim your energy, confidence, and internal balance. Our clinical team helps you develop sustainable habits, healthy body composition, pelvic tone, stress resilience, and complete female vitality.",
+    image: "/images/femora-wellness-consultation.png",
     featured: false,
-  },
-  {
-    slug: "confidential-sti-testing-treatment",
-    name: "Confidential STI / STD Screening & Treatment",
-    categorySlug: "confidential-care",
-    summary:
-      "Discreet diagnostic testing, rapid confidential results, counseling, and targeted treatment for men and women.",
-    details:
-      "Know your status in total privacy. We provide rapid diagnostic testing for common sexually transmitted infections, comprehensive syndromic management, post-exposure counseling, and partner therapies in a secure, clinical setting.",
-    image: "/images/confidential_sti_std_screening_treatment.jpg",
-    featured: true,
-  },
-  {
-    slug: "same-day-discreet-delivery-bulawayo",
-    name: "Same-Day Discreet Delivery (All Bulawayo Suburbs)",
-    categorySlug: "confidential-care",
-    summary:
-      "Unbranded, plain-package courier delivery direct to your doorstep across all western and eastern Bulawayo suburbs.",
-    details:
-      "Delivered with care and 100% confidentiality. Prescriptions, wellness products, and test kits arrive in sealed, completely plain bags without any external medical markings. Our dedicated courier covers Kumalo, Hillside, CBD, Cowdray Park, Nkulumane, and all surrounding areas.",
-    image: "/images/same_day_discreet_delivery_bulawayo.jpg",
-    featured: true,
   },
 ];
 

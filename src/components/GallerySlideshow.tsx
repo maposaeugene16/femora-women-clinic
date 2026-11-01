@@ -33,13 +33,13 @@ export default function GallerySlideshow() {
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">
-            Our Practice & Team
+            Our Women&apos;s Clinic &amp; Team
           </p>
           <h2 className="mt-2 text-3xl sm:text-4xl text-ink font-serif">
-            Doctors, Nurses & Clinical Environment
+            Female Doctors, Nurses &amp; Clinical Environment
           </h2>
           <p className="mt-2 text-sm text-muted max-w-xl">
-            A glimpse into our professional medical staff, authentic regulated medicines, and modern clinical care facilities serving Bulawayo.
+            A glimpse into our registered female healthcare practitioners, authentic MCAZ-regulated treatments, and comfortable clinical environment dedicated to women in Bulawayo.
           </p>
         </div>
         <div className="flex items-center gap-2">

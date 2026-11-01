@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0e1f1d;
-  --color-paper: #f6f3ec;
-  --color-deep: #0b3b36;
-  --color-brand: #138a7e;
-  --color-brand-dark: #0c6b61;
-  --color-gold: #c9a15a;
-  --color-sand: #ebe5d8;
-  --color-line: #ddd6c6;
-  --color-muted: #5b6866;
+  --color-ink: #23171e;
+  --color-paper: #fcf7f6;
+  --color-deep: #48162b;
+  --color-brand: #b83a66;
+  --color-brand-dark: #8e254b;
+  --color-gold: #cca15a;
+  --color-sand: #f4e6e2;
+  --color-line: #ead8d4;
+  --color-muted: #785e68;
 }
 
 @theme inline {
@@ -24,8 +24,9 @@ h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.015em; }
 
 .hero-bg {
   background:
-    radial-gradient(60rem 30rem at 85% -10%, rgba(19,138,126,.28), transparent 60%),
-    radial-gradient(40rem 24rem at -5% 30%, rgba(201,161,90,.22), transparent 60%),
+    radial-gradient(60rem 30rem at 85% -10%, rgba(184, 58, 102, 0.18), transparent 60%),
+    radial-gradient(40rem 24rem at -5% 30%, rgba(204, 161, 90, 0.20), transparent 60%),
+    radial-gradient(50rem 30rem at 50% 120%, rgba(244, 230, 226, 0.7), transparent 70%),
     var(--color-paper);
 }
 .grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.05;

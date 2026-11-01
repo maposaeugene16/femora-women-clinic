@@ -9,28 +9,28 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const faqs = [
   {
-    q: "Is my consultation at Aura Men & Women's Clinic completely confidential?",
+    q: "Is my consultation at Femora Women's Clinic completely confidential?",
     a: "Yes, 100%. All communications go directly to our registered medical practitioner via encrypted WhatsApp. We maintain strict medical doctor-patient confidentiality with zero records shared publicly.",
   },
   {
-    q: "Do all services comply with Zimbabwean laws?",
+    q: "Do all services comply with Zimbabwean healthcare laws?",
     a: "Yes. All our clinical services, medical consultations, reproductive healthcare advice, and prescribed medications strictly adhere to Zimbabwean law, the Health Professions Council of Zimbabwe (HPCZ), and Medicines Control Authority of Zimbabwe (MCAZ) regulations.",
   },
   {
+    q: "What women's healthcare services do you offer?",
+    a: "Femora provides comprehensive, specialized women's healthcare, including well-woman clinical examinations, fertility evaluations and ovulation tracking, prenatal and postnatal maternal support, menstrual wellness and PCOS management, menopause symptom relief, cervical screenings, and confidential STI testing.",
+  },
+  {
+    q: "Can you assist with irregular periods, PCOS, and fertility challenges?",
+    a: "Absolutely. Our doctors provide thorough hormonal evaluations, pelvic ultrasound scans, cycle tracking, and tailored clinical treatments to alleviate menstrual pain, regulate cycles, and support natural conception.",
+  },
+  {
     q: "What areas in Bulawayo do you serve?",
-    a: "We serve patients across all areas of Bulawayo, including Bulawayo CBD, Kumalo, Suburbs, Hillside, Bradfield, Famona, Ascot, Morningside, Nkulumane, Cowdray Park, Luveve, Pumula, Magwegwe, Entumbane, and surrounding Matabeleland centers.",
-  },
-  {
-    q: "What men's health services do you offer?",
-    a: "We offer private, stigma-free clinical care for erectile dysfunction (ED), premature climax, performance anxiety, male hormonal vitality, prostate wellness screenings, and rapid STI testing.",
-  },
-  {
-    q: "What women's health services do you offer?",
-    a: "We provide comprehensive women's reproductive healthcare, including fertility support, menstrual irregularities, ultrasound verification, MCAZ-approved contraception counseling, and post-pregnancy/miscarriage uterine recovery care under Zimbabwean medical guidelines.",
+    a: "We serve patients across all areas of Bulawayo, including Bulawayo CBD, Kumalo, Suburbs, Hillside, Bradfield, Famona, Ascot, Morningside, Nkulumane, Cowdray Park, Luveve, Pumula, Magwegwe, Entumbane, and surrounding Matabeleland communities.",
   },
   {
     q: "How does same-day delivery work in Bulawayo?",
-    a: "Following your confidential consultation, prescribed treatments or testing supplies can be dispatched in completely unbranded, tamper-evident plain packaging via our discreet local courier directly to your chosen address in Bulawayo.",
+    a: "Following your confidential consultation, prescribed treatments, contraceptives, or wellness supplies can be dispatched in completely unbranded, tamper-evident plain packaging via our discreet local courier directly to your chosen address in Bulawayo.",
   },
 ];
 
@@ -38,12 +38,12 @@ const steps = [
   {
     n: "01",
     t: "Choose Your Care",
-    d: "Browse our men's or women's health treatments or request a private consultation on WhatsApp.",
+    d: "Browse our women's health treatments or request a private consultation on WhatsApp.",
   },
   {
     n: "02",
     t: "Speak with a Doctor",
-    d: "Connect one-on-one with our clinical team on WhatsApp. Discuss symptoms, health history, and care plans in complete privacy.",
+    d: "Connect one-on-one with our clinical team on WhatsApp. Discuss symptoms, cycles, fertility, or care plans in complete privacy.",
   },
   {
     n: "03",
@@ -54,7 +54,7 @@ const steps = [
 
 export default function HomePage() {
   const featured = getFeaturedProducts();
-  const sample = featured[0]?.name ?? "Health Consultation";
+  const sample = featured[0]?.name ?? "Women's Health Consultation";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -86,17 +86,17 @@ export default function HomePage() {
                 Registered Zimbabwean Practitioners · Bulawayo
               </span>
               <span className="rounded-full bg-sand/70 px-3 py-1 text-xs font-medium text-deep">
-                HPCZ & MCAZ Compliant
+                HPCZ &amp; MCAZ Compliant
               </span>
             </div>
 
             <h1 className="rise rise-2 mt-6 text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink font-serif">
-              Aura Men &amp; Women’s Clinic, <br />
+              Femora Women’s Clinic, <br />
               <em className="text-brand not-italic">Bulawayo, Zimbabwe</em>
             </h1>
 
             <p className="rise rise-3 mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              Private, respectful, and confidential medical care for men and women across Bulawayo. From reproductive health, ultrasound scans, and fertility support to men&apos;s vitality and discreet treatment delivery.
+              Private, respectful, and confidential medical care exclusively for women across Bulawayo. From reproductive health, ultrasound scans, and fertility support to menstrual wellness and discreet medication delivery.
             </p>
 
             <div className="rise rise-3 mt-8 flex flex-wrap gap-4">
@@ -115,7 +115,7 @@ export default function HomePage() {
             <ul className="mt-10 grid grid-cols-2 gap-3 text-sm font-medium text-deep sm:flex sm:flex-wrap sm:gap-x-8">
               {[
                 "100% Confidential",
-                "Men & Women's Health",
+                "Women-Only Healthcare",
                 "Same-Day Bulawayo Delivery",
                 "Zimbabwe Law Compliant",
               ].map((t) => (
@@ -145,8 +145,8 @@ export default function HomePage() {
             <div className="relative overflow-hidden rounded-3xl border border-line bg-white shadow-xl">
               <div className="relative h-48 w-full sm:h-56">
                 <Image
-                  src="/images/file_000000002478821185cf415b4a7cdc36.png"
-                  alt="Aura Men and Women's Clinic medical team in Bulawayo"
+                  src="/images/femora-womens-health-consultation.png"
+                  alt="Femora Women's Clinic medical team and consultations in Bulawayo"
                   fill
                   priority
                   sizes="(max-width: 600px) 100vw, 450px"
@@ -155,7 +155,7 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/40 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5 text-white">
                   <p className="text-xs uppercase tracking-wider font-semibold text-gold">Bulawayo Medical Practice</p>
-                  <p className="font-serif text-lg leading-tight">Private Consultations · Both Men &amp; Women</p>
+                  <p className="font-serif text-lg leading-tight">Private Consultations · Exclusively for Women</p>
                 </div>
               </div>
 
@@ -163,22 +163,22 @@ export default function HomePage() {
               <div className="bg-deep p-5 text-white">
                 <div className="flex items-center gap-3 border-b border-white/10 pb-3">
                   <span className="grid h-9 w-9 place-items-center rounded-full bg-gold font-serif text-sm font-bold text-ink">
-                    AC
+                    FW
                   </span>
                   <div>
                     <p className="text-sm font-semibold">{site.practiceName}</p>
-                    <p className="text-[11px] text-[#a2d8a6] flex items-center gap-1.5">
+                    <p className="text-[11px] text-[#f3d1a4] flex items-center gap-1.5">
                       <span className="h-1.5 w-1.5 rounded-full bg-[#3cd070]" /> Bulawayo Doctor Online ({site.phoneDisplay})
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-4 space-y-3 text-xs sm:text-sm">
-                  <div className="ml-auto w-fit max-w-[90%] rounded-2xl rounded-br-xs bg-[#d9f5e4] px-4 py-2.5 text-ink shadow-xs">
-                    Hello Doctor, I am in Kumalo, Bulawayo. I would like a confidential consultation regarding {sample}.
+                  <div className="ml-auto w-fit max-w-[90%] rounded-2xl rounded-br-xs bg-[#fdeef2] px-4 py-2.5 text-ink shadow-xs">
+                    Hello Doctor, I am in Kumalo, Bulawayo. I would like a confidential women&apos;s health consultation regarding {sample}.
                   </div>
                   <div className="w-fit max-w-[90%] rounded-2xl rounded-bl-xs bg-white/10 px-4 py-2.5 text-white shadow-xs">
-                    Hello, welcome to Aura Men &amp; Women&apos;s Clinic. All conversations are 100% private. How may we assist you today?
+                    Hello, welcome to Femora Women&apos;s Clinic. All conversations are 100% private. How may our clinical team assist you today?
                   </div>
                 </div>
               </div>
@@ -193,9 +193,9 @@ export default function HomePage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
               <span className="font-serif text-2xl text-gold">100%</span>
-              <h3 className="mt-2 text-base font-bold text-ink">Total Discretion</h3>
+              <h3 className="mt-2 text-base font-bold text-ink">Women-Only Sanctuary</h3>
               <p className="mt-1 text-xs text-muted leading-relaxed">
-                Complete privacy with no public queues. Discuss sensitive men&apos;s and women&apos;s health concerns without stigma.
+                Dedicated exclusively to women&apos;s health, hormonal wellbeing, and maternal care with total dignity and zero judgment.
               </p>
             </div>
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
@@ -209,7 +209,7 @@ export default function HomePage() {
               <span className="font-serif text-2xl text-gold">MCAZ</span>
               <h3 className="mt-2 text-base font-bold text-ink">Regulated Pharmacy</h3>
               <p className="mt-1 text-xs text-muted leading-relaxed">
-                All medications and reproductive wellness products comply with Medicines Control Authority of Zimbabwe standards.
+                All medications, contraceptives, and reproductive wellness treatments comply with MCAZ national standards.
               </p>
             </div>
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
@@ -227,13 +227,13 @@ export default function HomePage() {
       <section id="treatments" className="mx-auto mt-24 max-w-6xl px-5">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">Clinical Services</p>
-          <h2 className="mt-2 text-3xl sm:text-4xl">Comprehensive Healthcare for Men &amp; Women</h2>
+          <h2 className="mt-2 text-3xl sm:text-4xl">Specialized Healthcare Exclusively for Women</h2>
           <p className="mt-3 text-muted">
-            Explore our specialized clinical care pathways designed for privacy, efficacy, and compassionate support in Bulawayo.
+            Explore our specialized clinical care pathways designed for privacy, compassionate support, and women&apos;s health empowerment in Bulawayo.
           </p>
         </div>
 
-        <ul className="mt-10 grid gap-6 sm:grid-cols-3">
+        <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((c, i) => (
             <li key={c.slug}>
               <Link
@@ -260,7 +260,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-widest text-brand">Featured Services</p>
-              <h2 className="mt-2 text-3xl sm:text-4xl">Popular Men &amp; Women&apos;s Treatments</h2>
+              <h2 className="mt-2 text-3xl sm:text-4xl">Popular Women&apos;s Health Treatments</h2>
             </div>
             <WhatsAppButton
               label="Ask Doctor About Any Service"
@@ -277,7 +277,7 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* 8-PICTURE SLIDESHOW GALLERY (DOCTORS, NURSES, MEDICINES) */}
+      {/* 8-PICTURE SLIDESHOW GALLERY */}
       <GallerySlideshow />
 
       {/* BULAWAYO LOCATIONS COVERAGE */}
@@ -336,10 +336,10 @@ export default function HomePage() {
             Open 7 Days a Week in Bulawayo
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif">
-            Ready to speak with a healthcare professional?
+            Ready to speak with a women&apos;s healthcare professional?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/75 text-sm sm:text-base leading-relaxed">
-            Your health and dignity are our top priority. Message our clinical team confidentially on WhatsApp or call us directly.
+            Your health, privacy, and dignity are our top priority. Message our clinical team confidentially on WhatsApp or call us directly.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <WhatsAppButton
@@ -348,7 +348,7 @@ export default function HomePage() {
             />
           </div>
           <p className="mt-4 text-xs text-white/60">
-            Helpline: {site.phoneDisplay} · Bulawayo, Zimbabwe · 100% Private Medical Care
+            Helpline: {site.phoneDisplay} · Bulawayo, Zimbabwe · 100% Private Women&apos;s Healthcare
           </p>
         </div>
       </section>

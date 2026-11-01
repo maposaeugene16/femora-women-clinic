@@ -9,66 +9,66 @@ export type GalleryImage = {
 export const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    url: "/images/file_000000002478821185cf415b4a7cdc36.png",
-    title: "Aura Men & Women’s Clinical Team",
+    url: "/images/femora-womens-health-consultation.png",
+    title: "Doctor-Led Well-Woman Consultation",
     category: "Doctor",
     caption:
-      "Registered physicians and qualified nurses providing confidential healthcare for men and women in Bulawayo.",
+      "Registered female medical practitioners conducting comprehensive health examinations, ultrasound scans, and private consultations in Bulawayo.",
   },
   {
     id: 2,
-    url: "/images/01_womens_reproductive_health.jpg",
-    title: "Doctor Ultrasound & Reproductive Care",
+    url: "/images/femora-fertility-consultation.png",
+    title: "Compassionate Fertility Consultation",
     category: "Doctor",
     caption:
-      "Female medical doctor reviewing digital ultrasound scans and reproductive wellness plans with a patient.",
+      "Specialized reproductive evaluations, ovulation tracking, hormone profiling, and fertility counseling tailored for women and couples.",
   },
   {
     id: 3,
-    url: "/images/file_0000000036088211bde156a4bd1fe16e.png",
-    title: "Men’s Boost Performance Medication",
-    category: "Medicines",
+    url: "/images/femora-maternal-care-banner.png",
+    title: "Maternal Health & Safe Pregnancy Care",
+    category: "Clinical Care",
     caption:
-      "Natural performance capsules formulated to increase male stamina, power, and physical confidence.",
+      "Dedicated prenatal monitoring, ultrasound imaging, and gentle postnatal healing in a comfortable, supportive clinical environment.",
   },
   {
     id: 4,
-    url: "/images/post_miscarriage_uterine_wellness_care.jpg",
-    title: "Compassionate Post-Care Nursing",
-    category: "Nurse",
+    url: "/images/femora-menstrual-wellness-consultation.png",
+    title: "Menstrual Wellness & Hormone Relief",
+    category: "Doctor",
     caption:
-      "Empathetic counseling, emotional support, and uterine healing checkups following pregnancy loss or complications.",
+      "Clinical diagnosis and targeted treatment for painful periods, irregular cycles, PCOS, and uterine fibroid management.",
   },
   {
     id: 5,
-    url: "/images/file_00000000911882118f70b9289737f012.png",
-    title: "Women’s Body Shaping & Flat Tummy",
+    url: "/images/femora-menopause-care-and-healthy-aging.png",
+    title: "Menopause Care & Graceful Aging",
     category: "Clinical Care",
     caption:
-      "Doctor-guided consultations on metabolism, healthy appetite control, and personalized body goal support.",
+      "Comprehensive clinical support for hormonal balance, hot flashes, bone density, and renewed vitality through midlife and beyond.",
   },
   {
     id: 6,
-    url: "/images/mens_vitality_performance_therapy.jpg",
-    title: "Men’s Vitality & Health Consultation",
-    category: "Doctor",
+    url: "/images/femora-medication-arrangement.png",
+    title: "Regulated Medication & Discreet Delivery",
+    category: "Medicines",
     caption:
-      "Private discussions on male hormonal balance, performance confidence, and overall vitality.",
+      "MCAZ-approved prescriptions, contraceptives, and female vitality treatments packaged in plain, unbranded parcels across Bulawayo.",
   },
   {
     id: 7,
-    url: "/images/file_000000009fa88211b8c65e411d17610f.png",
-    title: "Women’s Boost Vitality Capsules",
-    category: "Medicines",
+    url: "/images/femora-wellness-campaign.png",
+    title: "Preventative Women's Health Screenings",
+    category: "Nurse",
     caption:
-      "Natural dietary supplements formulated for women's hormonal balance, refreshed energy, and daily wellbeing.",
+      "Gentle Pap smears, confidential STI testing panels, breast examinations, and routine checkups conducted by compassionate nursing staff.",
   },
   {
     id: 8,
-    url: "/images/same_day_discreet_delivery_bulawayo.jpg",
-    title: "Same-Day Discreet Delivery in Bulawayo",
+    url: "/images/femora-wellness-consultation.png",
+    title: "Holistic Female Wellness & Counseling",
     category: "Clinical Care",
     caption:
-      "Unbranded, plain-bag delivery direct to your doorstep across all western and eastern Bulawayo suburbs.",
+      "Private consultations focused on metabolic health, stress resilience, uterine wellness, and total feminine confidence.",
   },
 ];
