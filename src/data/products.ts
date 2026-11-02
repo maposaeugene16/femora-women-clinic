@@ -124,7 +124,7 @@ export const products: Product[] = [
     details:
       "Proactive healthcare saves lives. Access confidential screenings for cervical health, confidential STI/STD panels, blood pressure, glucose, thyroid, and iron levels in a safe, judgment-free clinical environment.",
     image: "/images/femora-wellness-campaign.png",
-    featured: false,
+    featured: true,
   },
   {
     slug: "holistic-womens-vitality-consultation",
@@ -135,7 +135,7 @@ export const products: Product[] = [
     details:
       "Reclaim your energy, confidence, and internal balance. Dr. Selena helps you develop sustainable habits, healthy body composition, pelvic tone, stress resilience, and complete female vitality.",
     image: "/images/femora-wellness-consultation.png",
-    featured: false,
+    featured: true,
   },
 ];
 

@@ -23,7 +23,7 @@ export default function GallerySlideshow() {
     setCurrent((prev) => (prev - 1 + total) % total);
   }, [total]);
 
-  // Auto-play timer (5.5s)
+  // Auto-play timer (5.5s) - pauses on hover/lightbox
   useEffect(() => {
     if (!isPlaying || lightboxOpen) return;
     const timer = setInterval(() => {
@@ -32,17 +32,18 @@ export default function GallerySlideshow() {
     return () => clearInterval(timer);
   }, [isPlaying, lightboxOpen, nextSlide]);
 
-  // Auto scroll active thumbnail into view
+  // Auto scroll ONLY thumbnail container horizontally (never scroll main window)
   useEffect(() => {
-    if (thumbnailRowRef.current) {
-      const activeEl = thumbnailRowRef.current.children[current] as HTMLElement | undefined;
-      if (activeEl) {
-        activeEl.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-      }
+    const container = thumbnailRowRef.current;
+    if (container && container.children[current]) {
+      const activeEl = container.children[current] as HTMLElement;
+      const targetLeft =
+        activeEl.offsetLeft - container.offsetWidth / 2 + activeEl.offsetWidth / 2;
+      container.scrollTo({ left: targetLeft, behavior: "smooth" });
     }
   }, [current]);
 
-  // Close lightbox on Escape key
+  // Keyboard navigation
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") setLightboxOpen(false);
@@ -119,7 +120,7 @@ export default function GallerySlideshow() {
       <div className="overflow-hidden rounded-3xl border border-line bg-white shadow-xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[480px]">
           
-          {/* LEFT STORY PANEL (5 cols on lg) */}
+          {/* LEFT STORY PANEL */}
           <div className="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-line/70 bg-gradient-to-b from-paper/40 to-white">
             <div>
               {/* Header Badge & Counter */}
@@ -197,12 +198,12 @@ export default function GallerySlideshow() {
             </div>
           </div>
 
-          {/* RIGHT VISUAL STAGE (7 cols on lg) */}
+          {/* RIGHT VISUAL STAGE */}
           <div
-            className="lg:col-span-7 relative group cursor-pointer bg-black/95 overflow-hidden flex items-center justify-center min-h-[380px] lg:min-h-[520px]"
+            className="lg:col-span-7 relative group cursor-pointer bg-black/95 overflow-hidden flex items-center justify-center h-[380px] sm:h-[480px] lg:h-[540px] w-full"
             onClick={() => setLightboxOpen(true)}
           >
-            <div className="relative h-full w-full aspect-[4/3] lg:aspect-auto">
+            <div className="relative h-full w-full">
               <Image
                 key={active.url}
                 src={active.url}
@@ -260,7 +261,7 @@ export default function GallerySlideshow() {
                     : "border-line bg-white hover:border-deep/50 hover:shadow-xs opacity-75 hover:opacity-100"
                 } w-44 sm:w-52 p-2`}
               >
-                <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-black/10">
+                <div className="relative h-28 w-full rounded-xl overflow-hidden bg-black/10">
                   <Image
                     src={img.url}
                     alt={img.title}
@@ -319,7 +320,7 @@ export default function GallerySlideshow() {
             </div>
 
             {/* Modal Image Body */}
-            <div className="relative flex-1 min-h-[350px] sm:min-h-[500px] w-full bg-black/80 flex items-center justify-center p-3 sm:p-6">
+            <div className="relative flex-1 h-[65vh] w-full bg-black/80 flex items-center justify-center p-3 sm:p-6">
               <div className="relative h-full w-full">
                 <Image
                   src={active.url}

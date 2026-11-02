@@ -149,6 +149,7 @@ export default function HomePage() {
                   alt="Dr. Selena Femora Women's Clinic consultations"
                   fill
                   priority
+                  loading="eager"
                   sizes="(max-width: 600px) 100vw, 450px"
                   className="object-cover"
                 />
@@ -269,9 +270,9 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((p) => (
-              <ProductCard key={p.slug} product={p} />
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {featured.map((p, idx) => (
+              <ProductCard key={p.slug} product={p} priority={idx < 4} />
             ))}
           </div>
         </section>

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Product } from "@/data/products";
@@ -5,24 +8,34 @@ import { getCategory } from "@/data/products";
 import { site } from "@/config/site";
 import WhatsAppButton from "./WhatsAppButton";
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({ product, priority = false }: { product: Product; priority?: boolean }) {
   const category = getCategory(product.categorySlug);
+  const [imgSrc, setImgSrc] = useState(product.image);
+
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-xs transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <Link href={`/products/${product.slug}`} className="block overflow-hidden relative">
-        {product.image ? (
+      <Link href={`/products/${product.slug}`} className="block overflow-hidden relative h-56 w-full bg-sand/30">
+        {imgSrc ? (
           <Image
-            src={product.image}
+            src={imgSrc}
             alt={product.name}
-            width={640}
-            height={420}
-            className="h-52 w-full object-cover transition duration-500 group-hover:scale-105"
+            fill
+            priority={priority}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="object-cover transition duration-500 group-hover:scale-105"
+            onError={() => {
+              // Fallback to primary consultation banner if alias differs
+              setImgSrc("/images/femora-womens-health-consultation.png");
+            }}
           />
         ) : (
-          <div className="grid h-52 place-items-center bg-gradient-to-br from-deep to-brand font-serif text-6xl text-gold/90">
+          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-deep to-brand font-serif text-6xl text-gold/90">
             {product.name.charAt(0)}
           </div>
         )}
+        <div className="absolute top-3 left-3 rounded-full bg-deep/80 backdrop-blur-xs px-2.5 py-0.5 text-[11px] font-semibold text-white">
+          100% Confidential
+        </div>
       </Link>
       <div className="flex flex-1 flex-col gap-2 p-5">
         {category && (

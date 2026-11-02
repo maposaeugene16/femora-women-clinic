@@ -17,29 +17,50 @@
   --font-sans: var(--font-manrope), system-ui, sans-serif;
 }
 
-html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
-body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
-h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.015em; }
-:focus-visible { outline: 3px solid var(--color-gold); outline-offset: 3px; }
+/* Fast, natural, normal scroll response */
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.015em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
 
 .hero-bg {
   background:
-    radial-gradient(60rem 30rem at 85% -10%, rgba(184, 58, 102, 0.18), transparent 60%),
-    radial-gradient(40rem 24rem at -5% 30%, rgba(204, 161, 90, 0.20), transparent 60%),
-    radial-gradient(50rem 30rem at 50% 120%, rgba(244, 230, 226, 0.7), transparent 70%),
+    radial-gradient(60rem 30rem at 85% -10%, rgba(184, 58, 102, 0.16), transparent 60%),
+    radial-gradient(40rem 24rem at -5% 30%, rgba(204, 161, 90, 0.18), transparent 60%),
+    radial-gradient(50rem 30rem at 50% 120%, rgba(244, 230, 226, 0.6), transparent 70%),
     var(--color-paper);
 }
-.grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.05;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>"); }
 
-@keyframes rise { from { opacity:0; transform: translateY(14px);} to { opacity:1; transform:none;} }
-.rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
-.rise-2 { animation-delay: .12s; } .rise-3 { animation-delay: .24s; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+.rise { animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
+.rise-2 { animation-delay: .08s; }
+.rise-3 { animation-delay: .16s; }
+
 details > summary { list-style: none; cursor: pointer; }
 details > summary::-webkit-details-marker { display: none; }
 details[open] .chev { transform: rotate(45deg); }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
   .rise { animation: none; }
 }
