@@ -5,8 +5,8 @@ import WhatsAppButton from "./WhatsAppButton";
 
 const links = [
   { href: "/#treatments", label: "Services" },
-  { href: "/#gallery", label: "Gallery" },
-  { href: "/#locations", label: "Bulawayo Suburbs" },
+  { href: "/#gallery", label: "Clinical Gallery" },
+  { href: "/#locations", label: "Our 17 Locations" },
   { href: "/#how", label: "How It Works" },
   { href: "/#faq", label: "FAQ" },
 ];

@@ -43,7 +43,7 @@ export default async function CategoryPage({ params }: Props) {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-line/60 pb-8">
         <div>
           <span className="text-xs uppercase tracking-wider font-semibold text-brand">
-            {site.practiceName} · Bulawayo
+            {site.practiceName} · Led by Dr. Selena
           </span>
           <h1 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl text-ink">{category.name}</h1>
           <p className="mt-3 max-w-2xl text-base text-muted leading-relaxed">{category.blurb}</p>
@@ -59,7 +59,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="mt-12 rounded-2xl border border-line bg-white p-8 text-center">
           <p className="text-muted">No specific treatments listed in this section currently.</p>
           <div className="mt-4">
-            <WhatsAppButton label="Ask clinical team on WhatsApp" />
+            <WhatsAppButton label="Ask Dr. Selena on WhatsApp" />
           </div>
         </div>
       ) : (
@@ -73,8 +73,8 @@ export default async function CategoryPage({ params }: Props) {
       {/* FOOTER CALLOUT */}
       <div className="mt-16 rounded-2xl bg-paper border border-line p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
-          <p className="font-serif text-xl text-deep">Need discreet healthcare guidance in Bulawayo?</p>
-          <p className="text-sm text-muted mt-1">Our certified doctors and nurses are available on WhatsApp 7 days a week.</p>
+          <p className="font-serif text-xl text-deep">Need discreet women&apos;s healthcare guidance?</p>
+          <p className="text-sm text-muted mt-1">Dr. Selena is available on WhatsApp 7 days a week across all 17 nationwide locations.</p>
         </div>
         <WhatsAppButton label="Start private chat" variant="outline" className="shrink-0" />
       </div>

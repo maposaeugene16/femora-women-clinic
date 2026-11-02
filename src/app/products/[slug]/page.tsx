@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: Props) {
             <span className="flex items-center gap-1.5 font-medium text-deep">
               <span className="h-2 w-2 rounded-full bg-brand" /> 100% Confidential
             </span>
-            <span>Bulawayo, Zimbabwe</span>
+            <span>Dr. Selena · Nationwide Zimbabwe</span>
           </div>
         </div>
 
@@ -109,7 +109,7 @@ export default async function ProductPage({ params }: Props) {
               className="w-full justify-center !py-3.5 text-base shadow-md"
             />
             <p className="text-center text-xs text-muted">
-              Direct connection to certified Zimbabwean doctors &amp; nurses. No public records.
+              Direct confidential chat with Dr. Selena. Available across all 17 nationwide locations.
             </p>
           </div>
 

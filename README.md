@@ -1,6 +1,6 @@
-# Femora Women’s Clinic — Bulawayo, Zimbabwe
+# Femora Women’s Clinic — Led by Dr. Selena
 
-A modern, high-performance website and healthcare service catalog for **Femora Women’s Clinic**, providing confidential women’s healthcare, fertility consultations, ultrasound scans, maternal wellness, menstrual & menopause care, and same-day discreet delivery across Bulawayo, Zimbabwe.
+A modern, high-performance website and healthcare service catalog for **Femora Women’s Clinic**, led by **Dr. Selena**, providing confidential women’s healthcare, fertility consultations, ultrasound scans, maternal wellness, menstrual & menopause care, and same-day discreet delivery across 17 nationwide locations in Zimbabwe.
 
 Developed by **Maps**.
 
@@ -8,14 +8,35 @@ Built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tail
 
 ---
 
-## Features
+## Key Features
 
 - **Exclusively for Women**: Tailored consultations covering gynaecology, fertility, maternal care, menstrual cycle regularity, and menopause wellness.
-- **Bulawayo Localized Healthcare**: Tailored specifically for all suburbs in Bulawayo (CBD, Kumalo, Suburbs, Hillside, Bradfield, Famona, Ascot, Morningside, Cowdray Park, Nkulumane, Luveve, Pumula, etc.).
+- **Led by Dr. Selena**: Direct encrypted WhatsApp helpline (`+263 790 261 823`) with personalized patient consultations.
+- **17 Nationwide Operational Hubs**:
+  - **Harare** (and Satellite Towns: Chitungwiza, Ruwa, Norton, Epworth)
+  - **Bulawayo** (City & Suburbs)
+  - **Masvingo**
+  - **Zvishavane**
+  - **Gweru**
+  - **Mutare**
+  - **Rusape**
+  - **Marondera**
+  - **Chipinge**
+  - **Chiredzi**
+  - **Kadoma**
+  - **Kwekwe**
+  - **Chegutu**
+  - **Chinhoyi**
+  - **Bindura**
+  - **Chivhu**
+  - **Murehwa**
+- **Unique Interactive Clinical Showcase**:
+  - Dual-panel editorial studio showcase with clinical highlights.
+  - Interactive filmstrip navigator with mini-cards and active indicators.
+  - Full-screen Lightbox modal with zoom and high-resolution flyer inspection.
+  - Direct WhatsApp booking button linked directly to each treatment slide.
 - **Zimbabwean Law Compliant**: Follows the Health Professions Council of Zimbabwe (HPCZ) and Medicines Control Authority of Zimbabwe (MCAZ) regulations.
-- **WhatsApp Direct Consultations**: One-tap pre-filled confidential messages sent straight to the clinic's WhatsApp helpline (`+263 713 641 507`).
-- **Local Photo Gallery**: 8-photo slideshow featuring registered female doctors, nurses, regulated medicines, and discreet care.
-- **100% Local Assets**: All pictures stored locally in `public/images/` — zero reliance on external image servers.
+- **Same-Day Discreet Delivery**: Plain-box unbranded packaging dispatched direct to doorsteps across all 17 towns.
 - **Crafted with Care**: Developed by Maps.
 
 ---
@@ -32,13 +53,13 @@ git remote add origin https://github.com/maposaeugene16/femora-womens-clinic.git
 
 # 2. Stage and commit your changes
 git add .
-git commit -m "Initial commit for Femora Women's Clinic - Developed by Maps"
+git commit -m "Femora Women's Clinic: Dr. Selena nationwide network & unique gallery showcase"
 
 # 3. Push to your new repository
 git push -u origin main
 ```
 
-*(The original 1st system remains preserved at `aura-original` or its separate clone, untouched).*
+*(The original 1st system remains preserved at `aura-original`, untouched).*
 
 ---
 
@@ -79,7 +100,8 @@ npm run build
 ## Practice Information
 
 - **Practice**: Femora Women’s Clinic
-- **City / Country**: Bulawayo, Zimbabwe
-- **Phone / WhatsApp**: `+263 713 641 507`
+- **Doctor**: Dr. Selena
+- **Phone / WhatsApp**: `+263 790 261 823`
+- **Network**: 17 Operational Cities & Towns across Zimbabwe
 - **Hours**: Monday – Sunday, 8:00 AM – 8:00 PM
 - **Developed by**: Maps

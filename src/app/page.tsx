@@ -9,28 +9,28 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const faqs = [
   {
-    q: "Is my consultation at Femora Women's Clinic completely confidential?",
-    a: "Yes, 100%. All communications go directly to our registered medical practitioner via encrypted WhatsApp. We maintain strict medical doctor-patient confidentiality with zero records shared publicly.",
+    q: "Is my consultation with Dr. Selena completely confidential?",
+    a: "Yes, 100%. All communications go directly to Dr. Selena via encrypted WhatsApp (+263 790 261 823). We maintain strict doctor-patient confidentiality with zero records or details shared publicly.",
   },
   {
-    q: "Do all services comply with Zimbabwean healthcare laws?",
-    a: "Yes. All our clinical services, medical consultations, reproductive healthcare advice, and prescribed medications strictly adhere to Zimbabwean law, the Health Professions Council of Zimbabwe (HPCZ), and Medicines Control Authority of Zimbabwe (MCAZ) regulations.",
+    q: "Do all services comply with Zimbabwean healthcare regulations?",
+    a: "Yes. All clinical consultations, reproductive healthcare guidance, and prescribed medications strictly adhere to Zimbabwean law, the Health Professions Council of Zimbabwe (HPCZ), and Medicines Control Authority of Zimbabwe (MCAZ) regulations.",
   },
   {
-    q: "What women's healthcare services do you offer?",
-    a: "Femora provides comprehensive, specialized women's healthcare, including well-woman clinical examinations, fertility evaluations and ovulation tracking, prenatal and postnatal maternal support, menstrual wellness and PCOS management, menopause symptom relief, cervical screenings, and confidential STI testing.",
+    q: "Which locations does Dr. Selena operate in across Zimbabwe?",
+    a: "Dr. Selena operates across 17 primary locations: Harare (and satellite towns like Chitungwiza, Ruwa, Norton), Bulawayo, Mutare, Gweru, Masvingo, Kadoma, Kwekwe, Chegutu, Chinhoyi, Marondera, Zvishavane, Bindura, Rusape, Chiredzi, Chipinge, Chivhu, and Murehwa, with in-person care and discreet courier delivery.",
   },
   {
-    q: "Can you assist with irregular periods, PCOS, and fertility challenges?",
-    a: "Absolutely. Our doctors provide thorough hormonal evaluations, pelvic ultrasound scans, cycle tracking, and tailored clinical treatments to alleviate menstrual pain, regulate cycles, and support natural conception.",
+    q: "What specialized women's healthcare services does Dr. Selena offer?",
+    a: "Dr. Selena provides well-woman clinical examinations, fertility evaluations and ovulation tracking, prenatal and postnatal maternal support, menstrual wellness and PCOS management, menopause symptom relief, cervical screenings, and confidential STI testing.",
   },
   {
-    q: "What areas in Bulawayo do you serve?",
-    a: "We serve patients across all areas of Bulawayo, including Bulawayo CBD, Kumalo, Suburbs, Hillside, Bradfield, Famona, Ascot, Morningside, Nkulumane, Cowdray Park, Luveve, Pumula, Magwegwe, Entumbane, and surrounding Matabeleland communities.",
+    q: "Can Dr. Selena assist with irregular periods, PCOS, and fertility challenges?",
+    a: "Absolutely. Dr. Selena provides thorough hormonal evaluations, pelvic ultrasound scans, cycle tracking, and tailored clinical treatments to alleviate menstrual pain, regulate cycles, and support natural conception.",
   },
   {
-    q: "How does same-day delivery work in Bulawayo?",
-    a: "Following your confidential consultation, prescribed treatments, contraceptives, or wellness supplies can be dispatched in completely unbranded, tamper-evident plain packaging via our discreet local courier directly to your chosen address in Bulawayo.",
+    q: "How does discreet medication delivery work across the 17 towns?",
+    a: "Following your confidential consultation with Dr. Selena, prescribed treatments, contraceptives, or wellness supplies are dispatched in completely unbranded, tamper-evident plain packaging via our trusted courier directly to your address in any of the 17 operational hubs.",
   },
 ];
 
@@ -38,17 +38,17 @@ const steps = [
   {
     n: "01",
     t: "Choose Your Care",
-    d: "Browse our women's health treatments or request a private consultation on WhatsApp.",
+    d: "Browse our women's health treatments or request a private consultation with Dr. Selena on WhatsApp (+263 790 261 823).",
   },
   {
     n: "02",
-    t: "Speak with a Doctor",
-    d: "Connect one-on-one with our clinical team on WhatsApp. Discuss symptoms, cycles, fertility, or care plans in complete privacy.",
+    t: "Speak with Dr. Selena",
+    d: "Connect one-on-one with Dr. Selena on WhatsApp. Discuss symptoms, cycles, fertility, or care plans in 100% privacy.",
   },
   {
     n: "03",
-    t: "Clinic Visit or Delivery",
-    d: "Book an appointment at our comfortable Bulawayo clinic or opt for unbranded same-day delivery to your doorstep anywhere in Bulawayo.",
+    t: "Appointment or Delivery",
+    d: "Arrange an in-person consultation or opt for unbranded same-day plain-box delivery to your doorstep in any of our 17 nationwide locations.",
   },
 ];
 
@@ -65,8 +65,8 @@ export default function HomePage() {
     description: site.description,
     address: {
       "@type": "PostalAddress",
-      addressLocality: site.city,
-      addressRegion: site.province,
+      addressLocality: "Harare & Bulawayo",
+      addressRegion: "Zimbabwe",
       addressCountry: site.country,
     },
     openingHours: "Mo-Su 08:00-20:00",
@@ -83,7 +83,7 @@ export default function HomePage() {
             <div className="rise flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white/80 px-4 py-1.5 text-xs font-semibold text-deep shadow-xs">
                 <span className="h-2 w-2 rounded-full bg-brand animate-pulse" />
-                Registered Zimbabwean Practitioners · Bulawayo
+                Dr. Selena · Registered Zimbabwean Practitioner
               </span>
               <span className="rounded-full bg-sand/70 px-3 py-1 text-xs font-medium text-deep">
                 HPCZ &amp; MCAZ Compliant
@@ -92,23 +92,23 @@ export default function HomePage() {
 
             <h1 className="rise rise-2 mt-6 text-4xl sm:text-5xl lg:text-6xl leading-[1.08] text-ink font-serif">
               Femora Women’s Clinic, <br />
-              <em className="text-brand not-italic">Bulawayo, Zimbabwe</em>
+              <em className="text-brand not-italic">Led by Dr. Selena</em>
             </h1>
 
             <p className="rise rise-3 mt-6 max-w-xl text-lg leading-relaxed text-muted">
-              Private, respectful, and confidential medical care exclusively for women across Bulawayo. From reproductive health, ultrasound scans, and fertility support to menstrual wellness and discreet medication delivery.
+              Private, respectful, and confidential medical care exclusively for women across Harare, Bulawayo, and 17 nationwide locations in Zimbabwe. From reproductive health, ultrasound scans, and fertility support to menstrual wellness and discreet medication delivery.
             </p>
 
             <div className="rise rise-3 mt-8 flex flex-wrap gap-4">
               <WhatsAppButton
-                label="WhatsApp Doctor Directly"
+                label="WhatsApp Dr. Selena Directly"
                 className="!px-7 !py-4 text-base shadow-md"
               />
               <Link
                 href="/#gallery"
                 className="inline-flex items-center rounded-full border border-deep/30 bg-white/60 px-7 py-4 font-medium text-deep transition hover:bg-deep hover:text-white"
               >
-                View Staff &amp; Clinic Gallery
+                View Clinical Gallery
               </Link>
             </div>
 
@@ -116,8 +116,8 @@ export default function HomePage() {
               {[
                 "100% Confidential",
                 "Women-Only Healthcare",
-                "Same-Day Bulawayo Delivery",
-                "Zimbabwe Law Compliant",
+                "17 Nationwide Hubs",
+                "Discreet Plain-Box Delivery",
               ].map((t) => (
                 <li key={t} className="flex items-center gap-2">
                   <svg
@@ -146,7 +146,7 @@ export default function HomePage() {
               <div className="relative h-48 w-full sm:h-56">
                 <Image
                   src="/images/femora-womens-health-consultation.png"
-                  alt="Femora Women's Clinic medical team and consultations in Bulawayo"
+                  alt="Dr. Selena Femora Women's Clinic consultations"
                   fill
                   priority
                   sizes="(max-width: 600px) 100vw, 450px"
@@ -154,7 +154,7 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep/90 via-deep/40 to-transparent" />
                 <div className="absolute bottom-4 left-5 right-5 text-white">
-                  <p className="text-xs uppercase tracking-wider font-semibold text-gold">Bulawayo Medical Practice</p>
+                  <p className="text-xs uppercase tracking-wider font-semibold text-gold">Dr. Selena · Zimbabwe Practice</p>
                   <p className="font-serif text-lg leading-tight">Private Consultations · Exclusively for Women</p>
                 </div>
               </div>
@@ -163,22 +163,22 @@ export default function HomePage() {
               <div className="bg-deep p-5 text-white">
                 <div className="flex items-center gap-3 border-b border-white/10 pb-3">
                   <span className="grid h-9 w-9 place-items-center rounded-full bg-gold font-serif text-sm font-bold text-ink">
-                    FW
+                    DS
                   </span>
                   <div>
-                    <p className="text-sm font-semibold">{site.practiceName}</p>
+                    <p className="text-sm font-semibold">{site.practiceName} · Dr. Selena</p>
                     <p className="text-[11px] text-[#f3d1a4] flex items-center gap-1.5">
-                      <span className="h-1.5 w-1.5 rounded-full bg-[#3cd070]" /> Bulawayo Doctor Online ({site.phoneDisplay})
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#3cd070]" /> Doctor Online ({site.phoneDisplay})
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-4 space-y-3 text-xs sm:text-sm">
                   <div className="ml-auto w-fit max-w-[90%] rounded-2xl rounded-br-xs bg-[#fdeef2] px-4 py-2.5 text-ink shadow-xs">
-                    Hello Doctor, I am in Kumalo, Bulawayo. I would like a confidential women&apos;s health consultation regarding {sample}.
+                    Hello Dr. Selena, I would like a confidential women&apos;s health consultation regarding {sample}.
                   </div>
                   <div className="w-fit max-w-[90%] rounded-2xl rounded-bl-xs bg-white/10 px-4 py-2.5 text-white shadow-xs">
-                    Hello, welcome to Femora Women&apos;s Clinic. All conversations are 100% private. How may our clinical team assist you today?
+                    Hello, welcome to Femora Women&apos;s Clinic. I am Dr. Selena. All conversations are 100% private. How may I assist you today?
                   </div>
                 </div>
               </div>
@@ -200,9 +200,9 @@ export default function HomePage() {
             </div>
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
               <span className="font-serif text-2xl text-gold">HPCZ</span>
-              <h3 className="mt-2 text-base font-bold text-ink">Registered Doctors</h3>
+              <h3 className="mt-2 text-base font-bold text-ink">Dr. Selena (Registered)</h3>
               <p className="mt-1 text-xs text-muted leading-relaxed">
-                Consultations conducted by certified Zimbabwean physicians and qualified healthcare professionals.
+                Consultations conducted directly by certified Zimbabwean female doctor and qualified healthcare professionals.
               </p>
             </div>
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
@@ -213,10 +213,10 @@ export default function HomePage() {
               </p>
             </div>
             <div className="rounded-xl border border-line/60 bg-paper/50 p-5">
-              <span className="font-serif text-2xl text-gold">BYO</span>
-              <h3 className="mt-2 text-base font-bold text-ink">Bulawayo Delivery</h3>
+              <span className="font-serif text-2xl text-gold">17 Hubs</span>
+              <h3 className="mt-2 text-base font-bold text-ink">Nationwide Delivery</h3>
               <p className="mt-1 text-xs text-muted leading-relaxed">
-                Same-day plain-box discreet courier dispatch across all eastern and western suburbs in Bulawayo.
+                Same-day plain-box discreet courier dispatch across Harare, Bulawayo, Mutare, Gweru, Masvingo, and 12 more hubs.
               </p>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">Clinical Services</p>
           <h2 className="mt-2 text-3xl sm:text-4xl">Specialized Healthcare Exclusively for Women</h2>
           <p className="mt-3 text-muted">
-            Explore our specialized clinical care pathways designed for privacy, compassionate support, and women&apos;s health empowerment in Bulawayo.
+            Explore our specialized clinical care pathways designed for privacy, compassionate support, and women&apos;s health empowerment across Zimbabwe.
           </p>
         </div>
 
@@ -263,7 +263,7 @@ export default function HomePage() {
               <h2 className="mt-2 text-3xl sm:text-4xl">Popular Women&apos;s Health Treatments</h2>
             </div>
             <WhatsAppButton
-              label="Ask Doctor About Any Service"
+              label="Ask Dr. Selena About Any Service"
               variant="outline"
               className="w-fit !text-xs !py-2.5"
             />
@@ -277,10 +277,10 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* 8-PICTURE SLIDESHOW GALLERY */}
+      {/* UNIQUE MAGAZINE/STUDIO SLIDESHOW GALLERY */}
       <GallerySlideshow />
 
-      {/* BULAWAYO LOCATIONS COVERAGE */}
+      {/* NATIONWIDE 17-LOCATION NETWORK COVERAGE */}
       <LocationsSection />
 
       {/* HOW IT WORKS */}
@@ -289,7 +289,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">Simple &amp; Discreet</p>
           <h2 className="mt-2 text-3xl sm:text-4xl">How to access our clinic</h2>
           <p className="mt-3 text-muted text-sm sm:text-base">
-            Safe, respectful healthcare accessible directly from your phone in Bulawayo.
+            Safe, respectful healthcare accessible directly from your phone anywhere in Zimbabwe.
           </p>
         </div>
 
@@ -310,7 +310,7 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-widest text-brand">Common Questions</p>
           <h2 className="mt-2 text-3xl sm:text-4xl">Frequently asked questions</h2>
           <p className="mt-2 text-sm text-muted">
-            Information regarding consultations, privacy, Zimbabwean regulations, and Bulawayo delivery.
+            Information regarding consultations with Dr. Selena, privacy, Zimbabwean regulations, and nationwide delivery.
           </p>
         </div>
 
@@ -333,22 +333,22 @@ export default function HomePage() {
       <section className="mx-auto mt-24 max-w-6xl px-5">
         <div className="grain relative overflow-hidden rounded-3xl bg-deep px-8 py-16 text-center text-white shadow-xl">
           <span className="inline-block rounded-full bg-white/10 px-4 py-1 text-xs font-semibold text-gold mb-3">
-            Open 7 Days a Week in Bulawayo
+            Open 7 Days a Week Nationwide
           </span>
           <h2 className="text-3xl sm:text-4xl font-serif">
-            Ready to speak with a women&apos;s healthcare professional?
+            Ready to speak with Dr. Selena?
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-white/75 text-sm sm:text-base leading-relaxed">
-            Your health, privacy, and dignity are our top priority. Message our clinical team confidentially on WhatsApp or call us directly.
+            Your health, privacy, and dignity are our top priority. Message Dr. Selena confidentially on WhatsApp or call directly.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <WhatsAppButton
-              label="Start Confidential WhatsApp Chat"
+              label="Start Confidential Chat with Dr. Selena"
               className="!bg-gold !text-ink hover:!bg-white !px-8 !py-4 text-base font-semibold shadow-lg"
             />
           </div>
           <p className="mt-4 text-xs text-white/60">
-            Helpline: {site.phoneDisplay} · Bulawayo, Zimbabwe · 100% Private Women&apos;s Healthcare
+            Direct Helpline: {site.phoneDisplay} · Serving 17 Nationwide Locations · 100% Private Women&apos;s Healthcare
           </p>
         </div>
       </section>

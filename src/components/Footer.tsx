@@ -33,7 +33,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/#locations" className="hover:text-white transition">
-                All Bulawayo Suburbs &amp; Delivery
+                All 17 Nationwide Locations &amp; Delivery
               </Link>
             </li>
           </ul>
@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="mt-4">
             <span className="inline-flex items-center gap-2 text-xs text-[#f3d1a4]">
               <span className="h-2 w-2 rounded-full bg-[#3cd070] animate-pulse" />
-              Bulawayo Clinical Staff Online on WhatsApp
+              Dr. Selena Online on WhatsApp
             </span>
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function Footer() {
           </p>
         </div>
         <p className="mx-auto mt-4 max-w-6xl text-[11px] leading-relaxed text-white/50 text-center sm:text-left">
-          {site.practiceName} operates in strict compliance with the Health Professions Act of Zimbabwe, the Medicines Control Authority of Zimbabwe (MCAZ), and Zimbabwean public health legislation. All patient records, consultations, and test results are held in absolute medical confidentiality. In severe emergencies, please report immediately to United Bulawayo Hospitals (UBH) or Mpilo Central Hospital casualty departments.
+          {site.practiceName} operates in strict compliance with the Health Professions Act of Zimbabwe, the Medicines Control Authority of Zimbabwe (MCAZ), and Zimbabwean public health legislation. All patient records, consultations, and test results are held in absolute medical confidentiality. In severe emergencies, please report immediately to Parirenyatwa Hospital (Harare), UBH / Mpilo (Bulawayo), or your nearest provincial casualty department.
         </p>
       </div>
     </footer>
