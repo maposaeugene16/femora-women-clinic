@@ -104,4 +104,4 @@ npm run build
 - **Phone / WhatsApp**: `+263 790 261 823`
 - **Network**: 17 Operational Cities & Towns across Zimbabwe
 - **Hours**: Monday – Sunday, 8:00 AM – 8:00 PM
-- **Developed by**: Maps
+- **Developed by**: Maps (WhatsApp: `+263 775 126 513`)

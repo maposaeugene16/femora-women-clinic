@@ -56,7 +56,16 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
           <p>© {new Date().getFullYear()} {site.practiceName}. All rights reserved.</p>
           <p className="font-medium text-white/80">
-            Developed by <span className="text-gold font-semibold">Maps</span>
+            Developed by{" "}
+            <a
+              href={site.developer.chatLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Contact Maps for software development"
+              className="text-gold font-semibold hover:underline decoration-gold/60 transition cursor-pointer"
+            >
+              {site.developer.name}
+            </a>
           </p>
         </div>
         <p className="mx-auto mt-4 max-w-6xl text-[11px] leading-relaxed text-white/50 text-center sm:text-left">

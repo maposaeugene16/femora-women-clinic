@@ -18,6 +18,15 @@ export const site = {
   phoneDisplay: "+263 790 261 823",
   registrationNumber: "HPCZ & MCAZ Compliant · Registered Zimbabwean Healthcare Practice",
 
+  // Developer contact information (Maps)
+  developer: {
+    name: "Maps",
+    phone: "+263 775 126 513",
+    whatsappNumber: "263775126513",
+    chatLink:
+      "https://wa.me/263775126513?text=Hello%20Maps%2C%20I%20saw%20your%20software%20development%20work%20on%20the%20Femora%20platform%20and%20would%20like%20to%20inquire%20about%20developing%20a%20project.",
+  },
+
   // Pre-filled WhatsApp messages. {doctor} and {product} are replaced automatically.
   productMessage: "Hello {doctor}, I would like confidential information regarding {product} at Femora Women's Clinic.",
   generalMessage: "Hello {doctor}, I would like to make a private and confidential enquiry at Femora Women's Clinic.",
